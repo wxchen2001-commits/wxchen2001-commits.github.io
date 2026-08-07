@@ -22,14 +22,14 @@ repository : "wxchen2001-commits/wxchen2001-commits.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "Profile.jpg"
   name             : "Arthur W. Chen"
   pronouns         :
   bio              : "MBanFin candidate applying machine learning and textual analysis to commodity futures and climate risk. FRM."
   location         : "Melbourne, VIC, Australia"
   employer         : "Monash University"
   uri              :
-  email            : "wche0242@student.monash.edu"
+  email            : "wxchen2001@gmail.com"
 
   # Academic websites
   academia         :
@@ -124,7 +124,7 @@ staticman:
       options:
         format           : "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
 atom_feed:
-  hide                   : false     # change to true to hide the RSS feed in the footer
+  hide                   : true      # change to false to show the RSS feed in the footer
   path                   : # blank (default) uses feed.xml
 
 
@@ -142,8 +142,8 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 :  # Social media default site image
-og_description           :  # Social media default site image description
+og_image                 : "Profile.jpg" # Social media default site image
+og_description           : "Empirical asset pricing, commodity futures, and climate/policy risk" # Social media default site image description
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:

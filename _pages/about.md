@@ -7,9 +7,9 @@ redirect_from:
   - /about.html
 ---
 
-I am a Master of Banking and Finance candidate at **Monash University** (expected December 2026), and a certified Financial Risk Manager (FRM). Before Melbourne, I completed a BSc in Business Administration and Management at the **University of Debrecen**, Hungary, as a Stipendium Hungaricum scholar.
+I am a Master of Banking and Finance candidate at **Monash University** (expected December 2026) and a certified Financial Risk Manager (FRM). Before Melbourne, I completed a BSc in Business Administration and Management at the **University of Debrecen**, Hungary, as a Stipendium Hungaricum scholar.
 
-I am currently applying for PhD positions in empirical and quantitative finance for 2027 entry.
+I am currently applying for PhD positions in empirical and quantitative finance for 2027 entry. The best way to reach me is by email at **[wxchen2001@gmail.com](mailto:wxchen2001@gmail.com)**.
 
 Research interests
 ======
@@ -21,13 +21,13 @@ My work applies machine learning and textual analysis to **empirical asset prici
 
 A secondary line of work extends into FinTech and information-disclosure design.
 
-Selected publications
+Published work
 ======
-Chen, A.W. & Zhang, Z. (2026). [Can Soybean Tariff Shocks Trigger Abnormal Asymmetric Phenomena in Futures Markets? Evidence from the 2025 U.S.–China Trade Friction](https://doi.org/10.3390/ijfs14010003). *International Journal of Financial Studies*, 14(1), 1–25.
+**Chen, A.W.** & Zhang, Z. (2026). [Can Soybean Tariff Shocks Trigger Abnormal Asymmetric Phenomena in Futures Markets? Evidence from the 2025 U.S.–China Trade Friction](https://doi.org/10.3390/ijfs14010003). *International Journal of Financial Studies*, 14(1), 1–25.
 
 Li, B., **Chen, A.W.** et al. (2026). [Algorithmic Window Dressing: Disclosure Structure and Information Horizon Arbitrage](https://doi.org/10.1016/j.frl.2026.110485). *Finance Research Letters*, 108, 110485.
 
-Work in progress includes papers on machine-learning approaches to information shocks in Chinese agricultural futures, the securitization of battery supply chains in Europe, and a missing climate channel in global gas-market risk. A full list is on the [publications page](/publications/).
+Four further papers are under review or in progress — at the *Journal of Futures Markets*, *SN Business & Economics*, and *Alternatives: Global, Local, Political*, plus one targeting *Energy Economics*. Titles and drafts are on the [publications page](/publications/).
 
 Background
 ======
@@ -35,4 +35,6 @@ I have worked as a data analyst at **CATL** in Debrecen, Hungary, on supplier-pe
 
 Contact
 ======
-The best way to reach me is by email at [wche0242@student.monash.edu](mailto:wche0242@student.monash.edu). My CV is available [here](/cv/), and my publication record is indexed on [ORCID](https://orcid.org/0009-0007-1627-6473).
+Email: **[wxchen2001@gmail.com](mailto:wxchen2001@gmail.com)**
+
+My full CV is [here](/cv/), and my publication record is indexed on [ORCID](https://orcid.org/0009-0007-1627-6473).
