@@ -13,9 +13,9 @@ title                    : "Arthur Walter (Wenxuan) Chen"
 title_separator          : "-"
 name                     : &name "Arthur Walter (Wenxuan) Chen"
 description              : &description "Empirical asset pricing, commodity futures, and climate/policy risk"
-url                      : https://YOUR-GITHUB-USERNAME.github.io   # <-- 改成你的 GitHub 用户名
+url        : https://wxchen2001-commits.github.io
 baseurl                  : ""
-repository               : "YOUR-GITHUB-USERNAME/YOUR-GITHUB-USERNAME.github.io"   # <-- 同上
+repository : "wxchen2001-commits/wxchen2001-commits.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
