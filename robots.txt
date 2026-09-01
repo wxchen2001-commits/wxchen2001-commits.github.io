@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /assets/
+Disallow: /files/*.docx$
+
+Sitemap: https://arthurex.com/sitemap.xml
