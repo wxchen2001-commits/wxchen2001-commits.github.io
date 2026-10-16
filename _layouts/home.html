@@ -28,7 +28,7 @@
   "hasCredential":"Financial Risk Manager (FRM)",
   "knowsAbout":["Empirical asset pricing","Commodity futures","Climate risk","Machine learning in finance","Volatility forecasting","Textual analysis","实证资产定价","大宗商品期货","气候风险","机器学习"],
   "knowsLanguage":["en","zh","hu"],
-  "sameAs":["https://orcid.org/0009-0007-1627-6473","https://www.linkedin.com/in/wenxuanchen2001/","https://github.com/wxchen2001-commits"]}}
+  "sameAs":["https://orcid.org/0009-0007-1627-6473","https://www.linkedin.com/in/wenxuanchen2001/","https://github.com/wxchen2001-commits","https://www.tiktok.com/@ielts9.99999"]}}
 </script>
 <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-180x180.png">
@@ -209,6 +209,13 @@ h3.sub::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,var(
 .fab:hover,.fab.peek{gap:10px;padding:0 22px}
 .fab:hover .t,.fab.peek .t{max-width:260px;opacity:1}
 @keyframes fabping{70%{box-shadow:0 12px 34px rgba(0,0,0,.45),0 0 0 16px rgba(94,234,212,0)}100%{box-shadow:0 12px 34px rgba(0,0,0,.45),0 0 0 0 rgba(94,234,212,0)}}
+.toast{position:fixed;left:50%;bottom:34px;z-index:80;display:flex;align-items:center;gap:14px;padding:14px 22px 14px 16px;border-radius:16px;background:rgba(12,18,36,.94);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid rgba(94,234,212,.45);box-shadow:0 18px 50px rgba(0,0,0,.5);transform:translate(-50%,30px) scale(.96);opacity:0;pointer-events:none;transition:transform .45s cubic-bezier(.2,.9,.3,1.3),opacity .3s}
+.toast.show{transform:translate(-50%,0) scale(1);opacity:1}
+.toast .tick{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:var(--grad);color:#070b16;font-weight:700;flex:none}
+.toast.show .tick{animation:pop .5s .1s cubic-bezier(.2,.9,.3,1.5) both}
+@keyframes pop{from{transform:scale(0)}}
+.toast b{display:block;font-size:.95rem}
+.toast span{font-size:.83rem;color:var(--muted)}
 details.more{margin-top:18px}
 details.more>summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:18px 24px;border-radius:var(--r);background:var(--card);border:1px dashed rgba(167,139,250,.4);transition:background .3s}
 details.more>summary::-webkit-details-marker{display:none}
@@ -266,7 +273,7 @@ footer a{color:var(--muted)}
       <a href="#introduction" data-sec="introduction">Introduction</a>
       <a href="#research" data-sec="research">Publications &amp; Research</a>
       <a href="#business" data-sec="business">Business Projects</a>
-      <a href="mailto:info@arthurex.com" class="cv">Collaborate</a>
+      <a href="mailto:info@arthurex.com?subject=Research%20collaboration" class="cv" data-copy-email>Collaborate</a>
     </div>
   </div>
 </nav>
@@ -283,13 +290,13 @@ footer a{color:var(--muted)}
       <p class="lede">Master of Banking and Finance candidate at <strong>Monash University</strong> and certified FRM, applying machine learning and textual analysis to commodity futures, climate risk and policy shocks.</p>
       <div class="collab">
         <div><h2 class="grad-text">Collaborate with me</h2><span class="zh">Co-authorship, data and research projects welcome</span></div>
-        <a class="btn" href="mailto:info@arthurex.com?subject=Research%20collaboration">✉ info@arthurex.com</a>
+        <a class="btn" href="mailto:info@arthurex.com?subject=Research%20collaboration" data-copy-email>✉ info@arthurex.com</a>
       </div>
       <div class="socials">
         <a href="https://www.linkedin.com/in/wenxuanchen2001/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2zM8.3 18H5.7V9.8h2.6zM7 8.6a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zM18.3 18h-2.6v-4c0-1-.1-2.2-1.4-2.2s-1.6 1-1.6 2.1V18h-2.6V9.8h2.5v1.1c.4-.7 1.2-1.3 2.4-1.3 2.6 0 3.1 1.7 3.1 3.9z"/></svg>LinkedIn</a>
         <a href="https://orcid.org/0009-0007-1627-6473" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zM8.3 17.3H6.9V8.1h1.4zM7.6 7a.9.9 0 1 1 0-1.8.9.9 0 0 1 0 1.8zm5.6 10.3H10V8.1h3.2c3 0 4.4 2.2 4.4 4.6 0 2.6-2 4.6-4.4 4.6zm-.2-8h-1.6v6.8h1.6c2.3 0 3.2-1.7 3.2-3.4 0-1.9-1.2-3.4-3.2-3.4z"/></svg>ORCID</a>
         <a href="https://github.com/wxchen2001-commits" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.3-3.4-1.3-.4-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.6.3-1.1.6-1.3-2.2-.3-4.6-1.1-4.6-5a3.9 3.9 0 0 1 1-2.7c-.1-.3-.4-1.3.1-2.7 0 0 .8-.3 2.7 1a9.4 9.4 0 0 1 5 0c1.9-1.3 2.7-1 2.7-1 .5 1.4.2 2.4.1 2.7a3.9 3.9 0 0 1 1 2.7c0 3.9-2.3 4.7-4.6 5 .4.3.7.9.7 1.9V21c0 .3.2.6.7.5A10 10 0 0 0 12 2z"/></svg>GitHub</a>
-        <a href="#business"><svg viewBox="0 0 24 24"><path d="M16.6 5.8A4.3 4.3 0 0 1 15.5 3h-3.1v12.4a2.6 2.6 0 1 1-2.6-2.6c.3 0 .5 0 .8.1V9.7a5.7 5.7 0 1 0 4.9 5.7V9a7.3 7.3 0 0 0 4.3 1.4V7.3a4.3 4.3 0 0 1-3.2-1.5z"/></svg>TikTok · 300K+</a>
+        <a href="https://www.tiktok.com/@ielts9.99999" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M16.6 5.8A4.3 4.3 0 0 1 15.5 3h-3.1v12.4a2.6 2.6 0 1 1-2.6-2.6c.3 0 .5 0 .8.1V9.7a5.7 5.7 0 1 0 4.9 5.7V9a7.3 7.3 0 0 0 4.3 1.4V7.3a4.3 4.3 0 0 1-3.2-1.5z"/></svg>TikTok · 300K+</a>
       </div>
       <div class="stats">
         <div class="stat"><div class="n"><span data-count="2">0</span></div><div class="l">Published</div></div>
@@ -482,6 +489,7 @@ footer a{color:var(--muted)}
         <div class="glow" style="background:var(--rose)"></div>
         <div class="meta">Short-form video · TikTok</div>
         <h4>English-Language Video Editing</h4>
+        <a class="go" href="https://www.tiktok.com/@ielts9.99999" target="_blank" rel="noopener" style="position:relative;z-index:1;display:inline-flex;gap:6px;margin-top:4px;font-size:.88rem;color:var(--teal)">@ielts9.99999 on TikTok <span>→</span></a>
         <div class="big grad-text"><span data-count="300">0</span>K+</div>
         <p>Followers built through edited English-language short-form content: scripting, cutting, pacing and audience analytics.</p>
         <div class="bars" aria-hidden="true">
@@ -512,7 +520,8 @@ footer a{color:var(--muted)}
   </div>
 </footer>
 
-<a class="fab" id="fab" href="mailto:info@arthurex.com?subject=Hello%20Arthur" aria-label="Email Arthur at info@arthurex.com"><svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5z"/></svg><span class="t">Email me</span></a>
+<div class="toast" id="toast" role="status" aria-live="polite"><span class="tick">✓</span><div><b>Email copied</b><span>info@arthurex.com · opening your mail app…</span></div></div>
+<a class="fab" id="fab" href="mailto:info@arthurex.com?subject=Hello%20Arthur" data-copy-email aria-label="Email Arthur at info@arthurex.com"><svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5z"/></svg><span class="t">Email me</span></a>
 
 <script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/topojson-client@3/dist/topojson-client.min.js"></script>
@@ -520,6 +529,22 @@ footer a{color:var(--muted)}
 (function(){
   var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   document.getElementById('yr').textContent = new Date().getFullYear();
+  /* copy email + open mail app */
+  var toast=document.getElementById('toast'), tTimer;
+  function copyText(t){
+    if (navigator.clipboard && window.isSecureContext) return navigator.clipboard.writeText(t);
+    return new Promise(function(res,rej){ var ta=document.createElement('textarea'); ta.value=t; ta.setAttribute('readonly',''); ta.style.position='fixed'; ta.style.opacity='0'; document.body.appendChild(ta); ta.select(); try{ document.execCommand('copy') ? res() : rej(); }catch(e){ rej(e); } document.body.removeChild(ta); });
+  }
+  document.querySelectorAll('[data-copy-email]').forEach(function(a){
+    a.addEventListener('click', function(e){
+      e.preventDefault(); var href=a.getAttribute('href');
+      var ok=function(){ toast.querySelector('b').textContent='Email copied'; }, bad=function(){ toast.querySelector('b').textContent='info@arthurex.com'; };
+      copyText('info@arthurex.com').then(ok,bad).then(function(){
+        toast.classList.add('show'); clearTimeout(tTimer); tTimer=setTimeout(function(){ toast.classList.remove('show'); },3200);
+        setTimeout(function(){ window.location.href=href; },700);
+      });
+    });
+  });
   var fab=document.getElementById('fab'); setTimeout(function(){fab.classList.add('peek'); setTimeout(function(){fab.classList.remove('peek');},3200);},2500);
 
   /* name letter animation */
