@@ -5,8 +5,7 @@ category: workingpapers
 permalink: /publication/2026-07-01-signals-in-the-noise
 excerpt: 'Under review at the Journal of Futures Markets. Asks when alternative and unstructured information carries priced signal rather than noise in Chinese agricultural futures.'
 date: 2026-07-01
-venue: 'Journal of Futures Markets (JCR Q2) — under review'
-paperurl: 'https://drive.google.com/file/d/1JgUbSIjQga6XMCPXu3bZT5mtPJEeH8Lv/view?usp=sharing'
+venue: 'Journal of Futures Markets [SSCI, JCR Q2, ABDC A, ABS 3] — under review'
 citation: '<b>Chen, A.W.</b>, Chen, X. &amp; Zhu, Z.* (2026). &quot;Signals in the Noise: A Machine-Learning Approach to Pricing Alternative Information Shocks in Chinese Agricultural Futures.&quot; <i>Journal of Futures Markets</i>, under review.'
 ---
 

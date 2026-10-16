@@ -8,11 +8,12 @@
 #      Markdown formatted page while the second is generated using JSON.
 
 main:
+  - title: "Home"
+    url: /
+
   - title: "Publications"
     url: /publications/
 
-  - title: "CV"
-    url: /cv/
 
 # Removed from the navigation: Talks, Teaching, Portfolio, Blog Posts, Guide.
 # The underlying pages are also disabled (published: false) so they no longer

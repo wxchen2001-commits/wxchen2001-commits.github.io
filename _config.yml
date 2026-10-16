@@ -12,7 +12,7 @@ site_theme               : "default" # The available themes options are "default
 title                    : "Arthur Walter (Wenxuan) Chen"
 title_separator          : "-"
 name                     : &name "Arthur Walter (Wenxuan) Chen"
-description              : &description "Empirical asset pricing, commodity futures, and climate/policy risk"
+description              : &description "Collaborate with me: Arthur W. Chen (陈闻轩), finance researcher in empirical asset pricing, commodity futures, climate risk and machine learning. 欢迎合作。"
 url: "https://arthurex.com"
 baseurl: ""
 repository: "wxchen2001-commits/wxchen2001-commits.github.io"
@@ -29,7 +29,7 @@ author:
   location         : "Melbourne, VIC, Australia"
   employer         : "Monash University"
   uri              :
-  email            : "wxchen2001@gmail.com"
+  email            : "info@arthurex.com"
 
   # Academic websites
   academia         :

@@ -1,15 +1,12 @@
 ---
-title: "From Local Climate Stress in China to Global Gas-Market Risk: Evidence for a Missing Channel in the Social Cost of Carbon"
+title: "Local Attention Matters: Evidence from Regional Climate Stress and Spillovers to Global Natural Gas Volatility"
 collection: publications
 category: workingpapers
 permalink: /publication/2026-05-01-missing-climate-channel-gas-market-risk
-excerpt: 'In progress; target journal Energy Economics. Traces how localized climate stress in China enters global natural gas markets through a channel that standard social-cost-of-carbon estimates omit.'
+excerpt: 'Under review at Energy Economics. Traces how regional climate stress and local attention spill over to global natural gas volatility.'
 date: 2026-05-01
-venue: 'In progress — target journal: Energy Economics (JCR Q1)'
-paperurl: 'https://drive.google.com/file/d/1MdlsuoJb3XXwCnvWWNUvnz2YRg7nBXsZ/view?usp=sharing'
-citation: '<b>Chen, A.W.</b> &amp; Yuan, G.* (2026). &quot;From Local Climate Stress in China to Global Gas-Market Risk: Evidence for a Missing Channel in the Social Cost of Carbon.&quot; Work in progress; target journal: <i>Energy Economics</i>.'
+venue: 'Energy Economics [SSCI, JCR Q1, ABDC A*, ABS 3] — under review'
+citation: '<b>Chen, A.W.</b>, Yuan, G., Goodell, J.W.* &amp; Hou, Y.(G.) (2026). &quot;Local Attention Matters: Evidence from Regional Climate Stress and Spillovers to Global Natural Gas Volatility.&quot; <i>Energy Economics</i>, under review.'
 ---
 
-Standard social-cost-of-carbon estimates treat climate damages as largely local. This paper shows that localized climate stress in China propagates into global natural gas markets, and argues that this represents a channel missing from conventional damage accounting.
-
-Status: work in progress; target journal *Energy Economics*.
+Status: under peer review at *Energy Economics*.
