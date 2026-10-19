@@ -303,6 +303,81 @@ footer a{color:var(--ink)}footer a:hover{text-decoration:underline}
   *,*::before,*::after{animation-duration:.01ms!important;animation-delay:0s!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
   .rv{opacity:1;transform:none}
 }
+
+/* ===== v2 overrides: compact hero, research areas, background ===== */
+.hero{height:auto;min-height:100vh;min-height:100svh;display:flex;align-items:center;justify-content:center;text-align:center;position:relative;overflow:hidden;padding:110px 22px 90px}
+.hero .glow{transform:translate(-50%,-50%)}
+.hero .copy{max-width:980px;width:100%;min-width:0}
+.hero .slogan{font-size:clamp(46px,8.4vw,108px);line-height:1.02;font-weight:800;letter-spacing:-.04em;color:#f5f5f7}
+.hero .slogan .wd{display:inline-block;opacity:0;transform:translateY(.45em);filter:blur(10px);animation:wordIn 1.1s var(--spring) forwards}
+.hero .slogan .wd.g{background:var(--g1);-webkit-background-clip:text;background-clip:text;color:transparent;padding-bottom:.04em}
+@keyframes wordIn{to{opacity:1;transform:none;filter:blur(0)}}
+.who{display:inline-flex;align-items:center;gap:14px;margin-top:40px;padding:8px 22px 8px 8px;border-radius:980px;background:rgba(255,255,255,.06);box-shadow:inset 0 0 0 1px rgba(255,255,255,.1);text-align:left;opacity:0;animation:fade .9s var(--spring) .9s forwards}
+.who img{width:52px;height:52px;border-radius:50%;object-fit:cover;object-position:50% 30%}
+.who b{display:block;font-size:17px;font-weight:600;color:#f5f5f7;letter-spacing:-.015em}
+.who span{display:block;font-size:13px;color:#86868b}
+.hero .ctas{margin-top:34px;opacity:0;animation:fade .9s var(--spring) 1.1s forwards}
+.hero .scroll-hint{opacity:0;animation:fade 1s 1.5s forwards}
+.hero .scroll-hint:hover{color:#f5f5f7}
+
+.areas{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin-top:56px}
+.area{position:relative;border-radius:28px;background:var(--mist);padding:40px 36px 36px;min-height:300px;display:flex;flex-direction:column;overflow:hidden;transition:transform .6s var(--spring),box-shadow .6s var(--spring)}
+.area:hover{transform:translateY(-6px);box-shadow:0 24px 60px rgba(0,0,0,.09)}
+.area .num{font-size:14px;font-weight:600;color:var(--ink3)}
+.area .ico{width:60px;height:60px;border-radius:18px;display:grid;place-items:center;margin:26px 0 auto;color:#fff}
+.area .ico svg{width:28px;height:28px;fill:none;stroke:#fff;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.area h3{font-size:32px;font-weight:700;letter-spacing:-.025em;line-height:1.1;margin-top:28px}
+.area p{font-size:17px;color:var(--ink2);margin-top:10px;max-width:440px}
+.area::after{content:"";position:absolute;width:260px;height:260px;border-radius:50%;right:-90px;bottom:-110px;opacity:.16;filter:blur(30px);background:var(--c,#2997ff);transition:opacity .6s,transform .8s var(--spring)}
+.area:hover::after{opacity:.32;transform:scale(1.25)}
+
+.prow.feature{grid-template-columns:110px 1fr auto;padding:40px 40px;box-shadow:0 1px 0 rgba(0,0,0,.02)}
+.prow.feature h4{font-size:26px;line-height:1.2}
+.prow.feature .venue{font-size:17px;color:var(--ink);font-weight:500}
+.prow.feature .venue i{font-style:normal;color:var(--ink2);font-weight:400}
+.prow.feature .yr{font-size:44px;background:var(--g1);-webkit-background-clip:text;background-clip:text;color:transparent}
+.prow.feature .more{font-size:17px;margin-top:16px}
+
+.edu{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:56px}
+.ecard{border-radius:28px;background:#fff;padding:38px 36px;transition:transform .6s var(--spring),box-shadow .6s var(--spring)}
+.ecard:hover{transform:translateY(-4px);box-shadow:0 20px 50px rgba(0,0,0,.07)}
+.ecard .deg{font-size:14px;font-weight:600;color:var(--blue);letter-spacing:-.01em}
+.ecard h3{font-size:28px;font-weight:700;letter-spacing:-.025em;line-height:1.12;margin-top:10px}
+.ecard .org{font-size:17px;color:var(--ink2);margin-top:4px}
+.ecard .facts{display:flex;gap:28px;flex-wrap:wrap;margin-top:30px;padding-top:24px;border-top:1px solid #e8e8ed}
+.ecard .facts div b{display:block;font-size:30px;font-weight:700;letter-spacing:-.03em;line-height:1.05}
+.ecard .facts div span{font-size:13px;color:var(--ink2)}
+
+.rows{margin-top:44px;border-top:1px solid var(--line)}
+.row{display:grid;grid-template-columns:1.3fr 1.5fr .8fr;gap:24px;align-items:baseline;padding:24px 4px;border-bottom:1px solid var(--line);transition:background .3s,padding .5s var(--spring)}
+.row:hover{background:var(--mist);padding-left:16px;padding-right:16px}
+.row b{font-size:19px;font-weight:600;letter-spacing:-.02em}
+.row span{font-size:17px;color:var(--ink2)}
+.row em{font-style:normal;font-size:15px;color:var(--ink3);text-align:right}
+.sub2{font-size:clamp(28px,3.4vw,40px);font-weight:700;letter-spacing:-.025em;line-height:1.1;margin-top:110px}
+
+.endlink{margin-top:80px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;padding:40px;border-radius:28px;background:var(--ink);color:#f5f5f7;transition:transform .6s var(--spring)}
+.endlink:hover{transform:scale(1.01)}
+.endlink b{font-size:clamp(24px,3vw,34px);font-weight:700;letter-spacing:-.025em;display:block}
+.endlink span{font-size:17px;color:#a1a1a6}
+.endlink .pill{flex:none}
+
+.biz.compact .btile{min-height:300px}
+.biz.compact .btile .big{font-size:clamp(56px,7vw,96px)}
+
+@media (max-width:734px){
+  .who{margin-top:30px}
+  .areas,.edu{grid-template-columns:1fr;gap:14px}
+  .area{min-height:250px;padding:32px 26px}
+  .area h3{font-size:26px}
+  .prow.feature{grid-template-columns:1fr;padding:30px 26px}
+  .prow.feature h4{font-size:21px}
+  .prow.feature .yr{font-size:30px}
+  .ecard{padding:30px 26px}
+  .row{grid-template-columns:1fr;gap:4px}
+  .row em{text-align:left}
+  .endlink{padding:30px 26px}
+}
 </style>
 </head>
 <body>
@@ -311,9 +386,10 @@ footer a{color:var(--ink)}footer a:hover{text-decoration:underline}
   <div class="in">
     <a class="brand" href="#top">Arthur W. Chen</a>
     <div class="links" id="links">
-      <a href="#introduction" data-sec="introduction">Introduction</a>
-      <a href="#research" data-sec="research">Publications &amp; Research</a>
-      <a href="#business" data-sec="business">Business</a>
+      <a href="#research" data-sec="research">Research</a>
+      <a href="#network" data-sec="network">Network</a>
+      <a href="#publications" data-sec="publications">Publications</a>
+      <a href="#background" data-sec="background">Background</a>
       <a href="mailto:info@arthurex.com?subject=Research%20collaboration" class="cta" data-copy-email>Collaborate</a>
     </div>
     <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><i></i><i></i></button>
@@ -322,98 +398,66 @@ footer a{color:var(--ink)}footer a:hover{text-decoration:underline}
 <div class="progress" id="progress"></div>
 
 <!-- ============ HERO ============ -->
-<section class="hero" id="top" data-theme="dark">
-  <div class="stage">
-    <div class="glow" id="glow"></div>
-    <div class="copy" id="heroCopy">
-      <div class="tag">Open to research collaboration</div>
-      <h1><span class="line"><span>Arthur Walter</span></span><span class="line"><span>(Wenxuan) Chen</span></span></h1>
-      <div class="tri"><span>Commodities.</span><span>Climate.</span><span>Machine learning.</span></div>
-      <div class="ctas">
-        <a class="pill" href="mailto:info@arthurex.com?subject=Research%20collaboration" data-copy-email>Collaborate with me</a>
-        <a class="more" href="#research">View publications</a>
-      </div>
+<header class="hero" id="top" data-theme="dark">
+  <div class="glow" id="glow"></div>
+  <div class="copy" id="heroCopy">
+    <div class="tag">Open to research collaboration</div>
+    <h1 class="slogan" aria-label="Where climate meets markets."><span class="wd" style="animation-delay:.1s">Where</span> <span class="wd g" style="animation-delay:.22s">climate</span> <span class="wd" style="animation-delay:.34s">meets</span> <span class="wd g" style="animation-delay:.46s">markets.</span></h1>
+    <div class="who"><img src="/images/avatar.jpg" alt="Arthur W. Chen"><div><b>Arthur Walter (Wenxuan) Chen</b><span>Finance researcher · Monash University</span></div></div>
+    <div class="ctas">
+      <a class="pill" href="mailto:info@arthurex.com?subject=Research%20collaboration" data-copy-email>Collaborate with me</a>
+      <a class="more" href="#publications">View publications</a>
     </div>
-    <div class="shot" id="shot">
-      <img src="/images/portrait.jpg" alt="Arthur W. Chen" id="shotImg">
-      <div class="cap" id="cap"><b>Finance researcher. FRM.</b><span>Master of Banking and Finance · Monash University, Melbourne</span></div>
-    </div>
-    <div class="scroll-hint" id="hint">Scroll<i></i></div>
   </div>
-</section>
+  <a class="scroll-hint" href="#research" aria-label="Scroll to research">Scroll<i></i></a>
+</header>
 
 <main>
-<!-- ============ INTRODUCTION ============ -->
-<section class="light pad" id="introduction" data-theme="light">
+<!-- ============ RESEARCH AREAS ============ -->
+<section class="light pad" id="research" data-theme="light">
   <div class="wrap">
-    <div class="eyebrow rv">Introduction</div>
-    <p class="statement" id="statement">I am a Master of Banking and Finance candidate at Monash University and a certified Financial Risk Manager. I apply <em>machine learning</em> and <em>textual analysis</em> to <em>empirical asset pricing</em> and <em>risk measurement</em>, with a focus on agricultural and energy futures and on how climate and policy shocks move through markets.</p>
-    <div class="chips rv">
-      <span>Empirical asset pricing</span><span>Commodity futures</span><span>Climate risk</span><span>Trade &amp; policy shocks</span><span>Machine learning</span><span>Volatility forecasting</span><span>Textual analysis</span>
+    <div class="eyebrow rv">Research</div>
+    <h2 class="headline rv">Four questions.<br>One agenda.</h2>
+    <p class="subhead rv d1" style="margin-top:14px">I apply machine learning and textual analysis to how climate and policy risk move through commodity markets.</p>
+    <div class="areas">
+      <article class="area rv zoom" style="--c:#0071e3"><div class="num">01</div><div class="ico" style="background:linear-gradient(135deg,#0071e3,#64d2ff)"><svg viewBox="0 0 24 24"><path d="M3 17l5-5 4 4 8-8"/><path d="M14 8h6v6"/></svg></div><h3>Empirical asset pricing</h3><p>How information, attention and policy news get priced in futures markets.</p></article>
+      <article class="area rv zoom d1" style="--c:#ff9f0a"><div class="num">02</div><div class="ico" style="background:linear-gradient(135deg,#ff9f0a,#ff375f)"><svg viewBox="0 0 24 24"><path d="M12 3c-2 3-6 5-6 10a6 6 0 0 0 12 0c0-5-4-7-6-10z"/><path d="M12 21v-7"/></svg></div><h3>Commodity futures</h3><p>Agricultural and energy futures in China and the United States: volatility, asymmetry and spillovers.</p></article>
+      <article class="area rv zoom" style="--c:#30d158"><div class="num">03</div><div class="ico" style="background:linear-gradient(135deg,#30d158,#0071e3)"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg></div><h3>Climate &amp; policy risk</h3><p>How tariff shocks and regional climate stress transmit to global markets, from soybeans to natural gas.</p></article>
+      <article class="area rv zoom d1" style="--c:#a259ff"><div class="num">04</div><div class="ico" style="background:linear-gradient(135deg,#a259ff,#ff6482)"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M9 9h6v6H9zM9 2v2M15 2v2M9 20v2M15 20v2M2 9h2M2 15h2M20 9h2M20 15h2"/></svg></div><h3>Machine learning in finance</h3><p>Volatility forecasting, causal machine learning and machine-readable disclosure.</p></article>
     </div>
   </div>
 </section>
 
-<section class="mist pad" data-theme="light">
+<!-- ============ NETWORK ============ -->
+<section class="dark pad" id="network" data-theme="dark">
   <div class="wrap">
-    <h2 class="headline rv">The highlights.</h2>
-    <p class="subhead rv d1" style="margin-top:14px">A research record built across four continents, applying for PhD positions in empirical and quantitative finance for 2027 entry.</p>
-    <div class="bento">
-      <div class="tile s2 rv zoom"><div class="k">Peer-reviewed</div><div class="n grad"><span data-count="2">0</span></div><div class="d"><b>Published articles</b> in Finance Research Letters and IJFS.</div></div>
-      <div class="tile s2 rv zoom d1"><div class="k">Pipeline</div><div class="n"><span data-count="8">0</span></div><div class="d"><b>Papers in total</b>, including five under review or R&amp;R.</div></div>
-      <div class="tile s2 rv zoom d2 black"><div class="k">Network</div><div class="n"><span data-count="7">0</span></div><div class="d"><b>Regions</b> of co-authors and research partners.</div></div>
-      <div class="tile s3 rv zoom wide2"><div class="k">Monash University</div><div class="n"><span data-count="3.67" data-dec="2">0</span></div><div class="d"><b>GPA out of 4.00</b> · WAM 82.33, High Distinction.</div></div>
-      <div class="tile s3 rv zoom d1 wide2"><div class="k">University of Debrecen</div><div class="n grad">Top 10%</div><div class="d"><b>Ranked 7 of 76</b> · GPA 4.21 / 5.00.</div></div>
-      <div class="tile s2 rv zoom black"><div class="badge-ico">◆</div><h4>Financial Risk Manager (FRM)</h4><div class="d">GARP · 2025</div><a class="more" href="https://my.garp.org/DigitalBadgeFRM?id=0035d00006Pl0yyAAB" target="_blank" rel="noopener">Verify badge</a></div>
-      <div class="tile s2 rv zoom d1"><div class="badge-ico">★</div><h4>Stipendium Hungaricum Scholarship</h4><div class="d">Hungarian National Scholarship Commission · 2021–2025</div></div>
-      <div class="tile s2 rv zoom d2"><div class="badge-ico">❯</div><h4>PCEP – Certified Python Programmer</h4><div class="d">Python Institute · 2023</div><a class="more" href="https://www.credly.com/badges/ba65d872-4802-4dc2-a565-8ffa4c58e956" target="_blank" rel="noopener">Verify badge</a></div>
-    </div>
+    <div class="eyebrow rv">Collaboration network</div>
+    <h2 class="headline rv">Seven regions.<br><span class="grad">One research agenda.</span></h2>
+    <p class="subhead rv d1" style="margin-top:14px">Co-authors and research partners connected from my base in Melbourne.</p>
+    <div class="mapwrap rv zoom" id="mapcard"><svg id="map" viewBox="0 0 960 470" role="img" aria-label="World map of research collaborators in China, Hong Kong, Australia, New Zealand, the United States, the United Kingdom and Poland"></svg></div>
+    <div class="regions rv"><span>Mainland China</span><span>Hong Kong</span><span>Australia</span><span>New Zealand</span><span>United States</span><span>United Kingdom</span><span>Poland</span></div>
   </div>
 </section>
 
-<section class="light pad" data-theme="light" style="padding-bottom:90px">
+<!-- ============ PUBLICATIONS ============ -->
+<section class="mist pad" id="publications" data-theme="light">
   <div class="wrap">
-    <h2 class="headline rv">Education &amp; experience.</h2>
-    <p class="subhead rv d1" style="margin-top:14px">From risk analytics in banking to supply-chain data at CATL.</p>
-  </div>
-  <div class="gallery rv">
-    <div class="track" id="track">
-      <article class="slide"><div class="when">Jul 2025 – Dec 2026</div><div class="icon" style="background:linear-gradient(135deg,#0071e3,#a259ff)">🎓</div><h4>Master of Banking and Finance</h4><div class="org">Monash University · Melbourne</div><ul><li>GPA 3.67 / 4.00 · WAM 82.33 (High Distinction)</li><li>Research Skills (Python), Case Studies in Banking &amp; Finance, Chinese Economy &amp; Global Business</li></ul></article>
-      <article class="slide"><div class="when">Mar 2026 – Present</div><div class="icon" style="background:linear-gradient(135deg,#30d158,#0071e3)">🔬</div><h4>Research Volunteer</h4><div class="org">Monash University · Melbourne</div><ul><li>Financial-behaviour experiments for a social survey project</li><li>Data preparation, statistical analysis and reproducible workflows in Python and R</li></ul></article>
-      <article class="slide"><div class="when">May 2024 – Dec 2024</div><div class="icon" style="background:linear-gradient(135deg,#ff9f0a,#ff375f)">🔋</div><h4>Data Analyst</h4><div class="org">CATL · Debrecen, Hungary</div><ul><li>Supplier-performance and procurement-spend analytics (SAP ERP, Python)</li><li>Surfaced cost-saving opportunities for vendor-management decisions</li></ul></article>
-      <article class="slide"><div class="when">Jun 2023 – Sep 2023</div><div class="icon" style="background:linear-gradient(135deg,#ff375f,#a259ff)">📈</div><h4>Financial Risk Intern</h4><div class="org">Bank of China (International) · Shenyang</div><ul><li>Python backtesting framework for equity and futures strategies; ~15% more robust risk-adjusted results out of sample</li><li>Stress tests and statistical diagnostics on strategy logic</li></ul></article>
-      <article class="slide"><div class="when">Sep 2021 – Jan 2025</div><div class="icon" style="background:linear-gradient(135deg,#64d2ff,#30d158)">🏛</div><h4>BSc Business Administration &amp; Management</h4><div class="org">University of Debrecen · Hungary</div><ul><li>GPA 4.21 / 5.00 · Rank 7 / 76 (top 10%)</li><li>Thesis on the trade war and the soybean market, graded Excellent (5/5)</li></ul></article>
-    </div>
-    <div class="gctl"><div class="dots" id="dots"></div><button class="arrow" id="prev" aria-label="Previous">‹</button><button class="arrow" id="next" aria-label="Next">›</button></div>
-  </div>
-</section>
-
-<!-- ============ RESEARCH ============ -->
-<section class="mist pad" id="research" data-theme="light">
-  <div class="wrap">
-    <div class="eyebrow rv">Publications &amp; Research</div>
+    <div class="eyebrow rv">Publications</div>
     <h2 class="headline rv">Published.</h2>
-    <p class="subhead rv d1" style="margin-top:14px">Peer-reviewed work on trade shocks, futures markets and machine-readable disclosure. * denotes corresponding author.</p>
+    <p class="subhead rv d1" style="margin-top:14px">Peer-reviewed articles. * denotes corresponding author.</p>
     {% assign pubs = site.publications | sort: 'date' | reverse %}
     <div class="plist">
-      {% for p in pubs %}{% if p.category == 'manuscripts' %}
-      <article class="prow rv">
+      {% for p in pubs %}{% if p.category == 'manuscripts' %}{% assign vparts = p.venue | split: ' [' %}
+      <article class="prow feature rv">
         <div class="yr">{{ p.date | date: '%Y' }}</div>
-        <div><h4>{{ p.title }}</h4><div class="venue">{{ p.venue }}</div>{% if p.citation %}<div class="authors">{{ p.citation | split: '(20' | first }}</div>{% endif %}{% if p.paperurl %}<a class="more" href="{{ p.paperurl }}" target="_blank" rel="noopener">Read article</a>{% endif %}</div>
+        <div><h4>{{ p.title }}</h4><div class="venue">{{ vparts[0] }}{% if vparts[1] %} <i>[{{ vparts[1] }}</i>{% endif %}</div>{% if p.citation %}<div class="authors">{{ p.citation | split: '(20' | first }}</div>{% endif %}{% if p.paperurl %}<a class="more" href="{{ p.paperurl }}" target="_blank" rel="noopener">Read article</a>{% endif %}</div>
         <span class="tag2 t-pub">Published</span>
-      </article>
-      {% endif %}{% endfor %}
-      {% for p in pubs %}{% if p.category == 'theses' %}
-      <article class="prow rv">
-        <div class="yr">{{ p.date | date: '%Y' }}</div>
-        <div><h4>{{ p.title }}</h4><div class="venue">{{ p.venue }}</div>{% if p.citation %}<div class="authors">{{ p.citation | split: '(20' | first }}</div>{% endif %}{% if p.paperurl %}<a class="more" href="{{ p.paperurl }}" target="_blank" rel="noopener">View thesis</a>{% endif %}</div>
-        <span class="tag2 t-th">Thesis</span>
       </article>
       {% endif %}{% endfor %}
     </div>
     {% assign wps = pubs | where: 'category', 'workingpapers' %}
     <div class="expander rv" id="expander">
-      <button type="button" aria-expanded="false" aria-controls="wpList"><span><b>Working papers under review</b><small>{{ wps | size }} papers · R&amp;R and under peer review</small></span><span class="plus">+</span></button>
+      <button type="button" aria-expanded="false" aria-controls="wpList"><span><b>Working papers</b><small>{{ wps | size }} papers · R&amp;R and under peer review</small></span><span class="plus">+</span></button>
       <div class="collapse" id="wpList"><div>
         {% for p in wps %}{% assign v = p.venue | downcase %}
         <article class="prow">
@@ -424,51 +468,65 @@ footer a{color:var(--ink)}footer a:hover{text-decoration:underline}
         {% endfor %}
       </div></div>
     </div>
+  </div>
+</section>
 
-    <h2 class="headline rv" style="margin-top:130px">Research projects.</h2>
-    <div class="bento" style="margin-top:44px">
-      <div class="tile s2 rv zoom black"><div class="k">Jun 2026 – Present</div><h4>Campus Electrification Decision-Support</h4><div class="d">Monash Net Zero Initiative: decision-support for electrifying 90 buildings across three campuses by 2035. Python · Excel · LaTeX.</div></div>
-      <div class="tile s2 rv zoom d1"><div class="k">Mar 2022 – Sep 2023</div><h4>The Impact of “Common Prosperity” on China’s Economy</h4><div class="d">30-province panel and difference-in-differences estimation in Stata, with Prof. Y. Xing, Liaoning University.</div></div>
-      <div class="tile s2 rv zoom d2"><div class="k">Jan 2022 – Mar 2022</div><h4>Collaborative Training Model</h4><div class="d">Data analyst on a Liaoning Province Education Science Planning project. SPSS · survey data.</div></div>
+<!-- ============ BACKGROUND ============ -->
+<section class="light pad" id="background" data-theme="light">
+  <div class="wrap">
+    <div class="eyebrow rv">Background</div>
+    <h2 class="headline rv">Education.</h2>
+    <div class="edu">
+      <article class="ecard rv zoom" style="background:var(--mist)">
+        <div class="deg">Master · 2025 – 2026</div>
+        <h3>Master of Banking and Finance</h3>
+        <div class="org">Monash University, Melbourne</div>
+        <div class="facts"><div><b>3.67</b><span>GPA / 4.00</span></div><div><b>82.33</b><span>WAM · High Distinction</span></div></div>
+      </article>
+      <article class="ecard rv zoom d1" style="background:var(--mist)">
+        <div class="deg">Bachelor · 2021 – 2025</div>
+        <h3>BSc Business Administration and Management</h3>
+        <div class="org">University of Debrecen, Hungary</div>
+        <div class="facts"><div><b>4.21</b><span>GPA / 5.00</span></div><div><b>7 / 76</b><span>Class rank · top 10%</span></div></div>
+      </article>
+    </div>
+
+    <h3 class="sub2 rv">Working experience.</h3>
+    <div class="rows rv">
+      <div class="row"><b>Research Volunteer</b><span>Monash University, Melbourne</span><em>2026 – Present</em></div>
+      <div class="row"><b>Data Analyst</b><span>CATL, Debrecen, Hungary</span><em>2024</em></div>
+      <div class="row"><b>Financial Risk Intern</b><span>Bank of China (International), Shenyang</span><em>2023</em></div>
+    </div>
+
+    <h3 class="sub2 rv">Research projects.</h3>
+    <div class="rows rv">
+      <div class="row"><b>Campus Electrification Decision-Support</b><span>Monash Net Zero Initiative</span><em>2026 – Present</em></div>
+      <div class="row"><b>The Impact of “Common Prosperity” on China’s Economy</b><span>With Prof. Y. Xing, Liaoning University</span><em>2022 – 2023</em></div>
+      <div class="row"><b>Collaborative Training Model</b><span>Liaoning Province education research project</span><em>2022</em></div>
     </div>
   </div>
 </section>
 
-<section class="dark pad" data-theme="dark">
-  <div class="wrap">
-    <div class="eyebrow rv">Collaboration network</div>
-    <h2 class="headline rv">Seven regions.<br><span class="grad">One research agenda.</span></h2>
-    <p class="subhead rv d1" style="margin-top:14px">Co-authors and research partners connected from my base in Melbourne.</p>
-    <div class="mapwrap rv zoom" id="mapcard"><svg id="map" viewBox="0 0 960 470" role="img" aria-label="World map of research collaborators in China, Hong Kong, Australia, New Zealand, the United States, the United Kingdom and Poland"></svg></div>
-    <div class="regions rv"><span>Mainland China</span><span>Hong Kong</span><span>Australia</span><span>New Zealand</span><span>United States</span><span>United Kingdom</span><span>Poland</span></div>
-  </div>
-</section>
-
 <!-- ============ BUSINESS ============ -->
-<section class="dark pad" id="business" data-theme="dark" style="padding-top:40px">
+<section class="dark pad" id="business" data-theme="dark">
   <div class="wrap">
     <div class="eyebrow rv">Business projects</div>
     <h2 class="headline rv">Beyond research.</h2>
-    <div class="biz">
+    <div class="biz compact">
       <div class="btile rv zoom">
         <div class="orb" style="background:#ff375f"></div>
         <div class="k">Short-form video · TikTok</div>
         <h4>English-language video editing.</h4>
         <div class="big grad"><span data-count="300">0</span>K+</div>
-        <p>Followers built through edited English-language short-form content: scripting, cutting, pacing and audience analytics.</p>
-        <a class="more" href="https://www.tiktok.com/@ielts9.99999" target="_blank" rel="noopener">@ielts9.99999 on TikTok</a>
-        <div class="bars" aria-hidden="true"><i style="height:12%"></i><i style="height:18%;transition-delay:.04s"></i><i style="height:16%;transition-delay:.08s"></i><i style="height:28%;transition-delay:.12s"></i><i style="height:34%;transition-delay:.16s"></i><i style="height:32%;transition-delay:.2s"></i><i style="height:46%;transition-delay:.24s"></i><i style="height:57%;transition-delay:.28s"></i><i style="height:54%;transition-delay:.32s"></i><i style="height:71%;transition-delay:.36s"></i><i style="height:84%;transition-delay:.4s"></i><i style="height:100%;transition-delay:.44s"></i></div>
+        <p>Followers on TikTok.</p>
+        <a class="more" href="https://www.tiktok.com/@ielts9.99999" target="_blank" rel="noopener">@ielts9.99999</a>
       </div>
       <div class="btile rv zoom d1">
         <div class="orb" style="background:#2997ff"></div>
         <div class="k">AI · Cloud · Content</div>
         <h4>AI cloud trending-content business.</h4>
-        <div class="big grad" style="font-size:clamp(56px,7vw,96px)">AI × Trends</div>
-        <p>Uses cloud-hosted AI tools to track trending topics in real time, produce content at scale and turn attention into traffic.</p>
-        <svg class="wave" viewBox="0 0 400 80" preserveAspectRatio="none" aria-hidden="true">
-          <defs><linearGradient id="wg" x1="0" x2="1"><stop offset="0" stop-color="#2997ff"/><stop offset=".5" stop-color="#a259ff"/><stop offset="1" stop-color="#ff6482"/></linearGradient></defs>
-          <path id="wave2" stroke="rgba(162,89,255,.35)" d=""/><path id="wave1" stroke="url(#wg)" d=""/>
-        </svg>
+        <div class="big grad">AI × Trends</div>
+        <p>Cloud-hosted AI tools that track trending topics and turn attention into traffic.</p>
       </div>
     </div>
   </div>
@@ -485,11 +543,14 @@ footer a{color:var(--ink)}footer a:hover{text-decoration:underline}
       <a class="pill ghost" href="https://www.linkedin.com/in/wenxuanchen2001/" target="_blank" rel="noopener">Connect on LinkedIn</a>
     </div>
     <a class="mail rv d2" href="mailto:info@arthurex.com?subject=Research%20collaboration" data-copy-email>info@arthurex.com</a>
+    <a class="endlink rv" href="/publications/" style="text-align:left">
+      <div><b>Full publication list</b><span>Every article, working paper and thesis, with citations.</span></div>
+      <span class="pill">View all publications</span>
+    </a>
     <div class="socials rv d3">
       <a class="more" href="https://orcid.org/0009-0007-1627-6473" target="_blank" rel="noopener">ORCID</a>
       <a class="more" href="https://github.com/wxchen2001-commits" target="_blank" rel="noopener">GitHub</a>
       <a class="more" href="https://www.tiktok.com/@ielts9.99999" target="_blank" rel="noopener">TikTok</a>
-      <a class="more" href="/publications/">Publication list</a>
     </div>
   </div>
 </section>
@@ -497,7 +558,7 @@ footer a{color:var(--ink)}footer a:hover{text-decoration:underline}
 <footer>
   <div class="wrap">
     <span>Copyright © <span id="yr"></span> Arthur Walter (Wenxuan) Chen. Melbourne, Australia.</span>
-    <span><a href="mailto:info@arthurex.com" data-copy-email>info@arthurex.com</a></span>
+    <span><a href="/publications/">Publications</a> · <a href="mailto:info@arthurex.com" data-copy-email>info@arthurex.com</a></span>
   </div>
 </footer>
 
@@ -510,11 +571,9 @@ footer a{color:var(--ink)}footer a:hover{text-decoration:underline}
 (function(){
   var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
   var clamp = function(v,a,b){ return Math.max(a, Math.min(b, v)); };
-  var lerp = function(a,b,t){ return a + (b-a)*t; };
   var ease = function(t){ return 1 - Math.pow(1-t, 3); };
   document.getElementById('yr').textContent = new Date().getFullYear();
 
-  /* ---------- nav: theme swap, active link, progress, mobile menu ---------- */
   var gnav = document.getElementById('gnav'), prog = document.getElementById('progress'), fab = document.getElementById('fab');
   var themed = [].slice.call(document.querySelectorAll('[data-theme]'));
   var navLinks = [].slice.call(document.querySelectorAll('.links a[data-sec]'));
@@ -522,58 +581,25 @@ footer a{color:var(--ink)}footer a:hover{text-decoration:underline}
   burger.addEventListener('click', function(){ var o = gnav.classList.toggle('open'); burger.setAttribute('aria-expanded', o); });
   document.querySelectorAll('.links a').forEach(function(a){ a.addEventListener('click', function(){ gnav.classList.remove('open'); burger.setAttribute('aria-expanded', false); }); });
 
-  /* ---------- hero pinned scroll ---------- */
-  var hero = document.getElementById('top'), copy = document.getElementById('heroCopy'), shot = document.getElementById('shot'), shotImg = document.getElementById('shotImg'), cap = document.getElementById('cap'), glow = document.getElementById('glow'), hint = document.getElementById('hint');
-
-  /* ---------- statement word highlight ---------- */
-  var st = document.getElementById('statement'), words = [];
-  (function(){ var html = '';
-    st.childNodes.forEach(function(n){
-      var hl = n.nodeType === 1 && n.tagName === 'EM', txt = n.textContent;
-      txt.split(/(\s+)/).forEach(function(w){ if (!w) return; if (/^\s+$/.test(w)) { html += w; return; } html += '<span class="w' + (hl ? ' hl' : '') + '">' + w + '</span>'; });
-    });
-    st.innerHTML = html; words = [].slice.call(st.querySelectorAll('.w'));
-  })();
-
+  var heroCopy = document.getElementById('heroCopy'), glow = document.getElementById('glow');
   var ticking = false;
   function frame(){
     ticking = false;
     var y = scrollY, vh = innerHeight, max = document.documentElement.scrollHeight - vh;
     prog.style.transform = 'scaleX(' + (y / max) + ')';
-
-    /* nav theme: whichever section sits under the bar */
     var under = null; themed.forEach(function(s){ var r = s.getBoundingClientRect(); if (r.top <= 48 && r.bottom > 48) under = s; });
     gnav.classList.toggle('light-mode', !!under && under.dataset.theme === 'light');
     var cur = null; navLinks.forEach(function(a){ var s = document.getElementById(a.dataset.sec); if (s.getBoundingClientRect().top < vh * .45) cur = a; });
-    if (document.getElementById('contact').getBoundingClientRect().top < vh * .45) cur = null;
+    if (document.getElementById('business').getBoundingClientRect().top < vh * .45) cur = null;
     navLinks.forEach(function(a){ a.classList.toggle('active', a === cur); });
-    fab.classList.toggle('show', y > vh * 1.2);
-
-    /* hero */
-    var hr = hero.getBoundingClientRect(), p = clamp(-hr.top / (hr.height - vh), 0, 1);
-    if (!reduce){
-      var a = ease(clamp(p / .55, 0, 1)), b = ease(clamp((p - .5) / .4, 0, 1));
-      copy.style.transform = 'translate3d(0,' + (-a * 120) + 'px,0) scale(' + (1 - a * .12) + ')';
-      copy.style.opacity = 1 - a * 1.1;
-      hint.style.visibility = p > .02 ? 'hidden' : '';
-      var small = innerWidth < 734 ? 180 : 220, bigH = Math.min(vh - 110, 760), bigW = Math.min(innerWidth - 44, bigH * .82);
-      var w = lerp(small, bigW, a), h = lerp(small, bigH, a), rad = lerp(small / 2, 32, a);
-      shot.style.width = w + 'px'; shot.style.height = h + 'px'; shot.style.borderRadius = rad + 'px';
-      var target = vh / 2 + 24 - (shot.offsetTop + h / 2);
-      shot.style.transform = 'translate3d(0,' + (a * target) + 'px,0)';
-      shotImg.style.transform = 'scale(' + lerp(1.12, 1, a) + ')';
-      cap.style.opacity = b; cap.style.transform = 'translateY(' + (20 - b * 20) + 'px)';
-      glow.style.opacity = 1 - a * .6; glow.style.transform = 'translate(-50%,' + (-30 - a * 20) + '%) scale(' + (1 + a * .4) + ')';
-    }
-
-    /* statement */
-    var sr = st.getBoundingClientRect(), sp = clamp((vh * .82 - sr.top) / (sr.height + vh * .3), 0, 1), lit = Math.round(sp * words.length);
-    for (var i = 0; i < words.length; i++) words[i].classList.toggle('lit', reduce || i < lit);
+    fab.classList.toggle('show', y > vh * .8);
+    if (!reduce){ var k = clamp(y / vh, 0, 1);
+      heroCopy.style.transform = 'translate3d(0,' + (k * 80) + 'px,0) scale(' + (1 - k * .06) + ')'; heroCopy.style.opacity = 1 - k * 1.2;
+      glow.style.transform = 'translate(-50%,' + (-50 + k * 20) + '%) scale(' + (1 + k * .3) + ')'; }
   }
   function onScroll(){ if (!ticking){ ticking = true; requestAnimationFrame(frame); } }
   addEventListener('scroll', onScroll, {passive:true}); addEventListener('resize', onScroll); frame();
 
-  /* ---------- reveal + counters ---------- */
   function count(el){ var to = parseFloat(el.dataset.count), dec = +(el.dataset.dec || 0), t0 = null;
     if (reduce){ el.textContent = to.toFixed(dec); return; }
     (function stp(t){ if (!t0) t0 = t; var k = Math.min((t - t0) / 1500, 1); el.textContent = (to * ease(k)).toFixed(dec); if (k < 1) requestAnimationFrame(stp); })(performance.now()); }
@@ -581,30 +607,9 @@ footer a{color:var(--ink)}footer a:hover{text-decoration:underline}
     t.querySelectorAll('[data-count]').forEach(count); if (t.id === 'mapcard') startMap(); io.unobserve(t); }); }, {threshold:.18, rootMargin:'0px 0px -6% 0px'});
   document.querySelectorAll('.rv').forEach(function(el){ io.observe(el); });
 
-  /* ---------- gallery: arrows, dots, drag ---------- */
-  var track = document.getElementById('track'), slides = [].slice.call(track.children), dots = document.getElementById('dots'), prev = document.getElementById('prev'), next = document.getElementById('next');
-  slides.forEach(function(s, i){ var d = document.createElement('i'); d.addEventListener('click', function(){ go(i); }); dots.appendChild(d); });
-  function step(){ return slides[0].offsetWidth + 20; }
-  function idx(){ return Math.round(track.scrollLeft / step()); }
-  function go(i){ track.scrollTo({left: clamp(i, 0, slides.length - 1) * step(), behavior: reduce ? 'auto' : 'smooth'}); }
-  function sync(){ var i = idx(), end = track.scrollLeft + track.clientWidth >= track.scrollWidth - 4;
-    [].forEach.call(dots.children, function(d, j){ d.classList.toggle('on', j === (end ? slides.length - 1 : i)); });
-    prev.disabled = track.scrollLeft < 4; next.disabled = end;
-    slides.forEach(function(s){ var r = s.getBoundingClientRect(), c = (r.left + r.width / 2) / innerWidth; s.style.opacity = (c > 1.05 || c < -0.05) ? .55 : 1; }); }
-  prev.onclick = function(){ go(idx() - 1); }; next.onclick = function(){ go(idx() + 1); };
-  track.addEventListener('scroll', function(){ requestAnimationFrame(sync); }, {passive:true}); sync();
-  var dragging = false, sx = 0, sl = 0, moved = 0;
-  track.addEventListener('pointerdown', function(e){ if (e.pointerType !== 'mouse') return; dragging = true; moved = 0; sx = e.clientX; sl = track.scrollLeft; track.classList.add('drag'); track.setPointerCapture(e.pointerId); });
-  track.addEventListener('pointermove', function(e){ if (!dragging) return; moved = e.clientX - sx; track.scrollLeft = sl - moved; });
-  function endDrag(){ if (!dragging) return; dragging = false; track.classList.remove('drag'); var i = idx(); if (Math.abs(moved) > 40) i = moved < 0 ? Math.ceil(track.scrollLeft / step() - .3) : Math.floor(track.scrollLeft / step() + .3); go(i); }
-  track.addEventListener('pointerup', endDrag); track.addEventListener('pointercancel', endDrag);
-  document.addEventListener('keydown', function(e){ var r = track.getBoundingClientRect(); if (r.top < innerHeight && r.bottom > 0){ if (e.key === 'ArrowRight') go(idx() + 1); if (e.key === 'ArrowLeft') go(idx() - 1); } });
-
-  /* ---------- working papers expander ---------- */
   var ex = document.getElementById('expander'), exb = ex.querySelector('button');
   exb.addEventListener('click', function(){ var o = ex.classList.toggle('open'); exb.setAttribute('aria-expanded', o); });
 
-  /* ---------- copy email + open mail app ---------- */
   var toast = document.getElementById('toast'), tT;
   function copyText(t){
     if (navigator.clipboard && window.isSecureContext) return navigator.clipboard.writeText(t);
@@ -621,12 +626,7 @@ footer a{color:var(--ink)}footer a:hover{text-decoration:underline}
   });
   var peeked = false; addEventListener('scroll', function(){ if (!peeked && fab.classList.contains('show')){ peeked = true; fab.classList.add('peek'); setTimeout(function(){ fab.classList.remove('peek'); }, 2600); } }, {passive:true});
 
-  /* ---------- business wave ---------- */
-  var w1 = document.getElementById('wave1'), w2 = document.getElementById('wave2'), ph = 0;
-  (function wave(){ var a = '', b = ''; for (var x = 0; x <= 400; x += 8){ var y1 = 44 + Math.sin(x / 38 + ph) * 13 + Math.sin(x / 17 + ph * 1.7) * 5 - x * .05, y2 = 50 + Math.sin(x / 45 - ph * .8) * 11 - x * .035;
-    a += (x ? 'L' : 'M') + x + ' ' + y1.toFixed(1); b += (x ? 'L' : 'M') + x + ' ' + y2.toFixed(1); } w1.setAttribute('d', a); w2.setAttribute('d', b); ph += .025; if (!reduce) requestAnimationFrame(wave); })();
-
-  /* ---------- collaboration map ---------- */
+/* ---------- collaboration map ---------- */
   var mapStarted = false;
   function startMap(){
     if (mapStarted || !window.d3 || !window.topojson) return; mapStarted = true;
@@ -668,6 +668,7 @@ footer a{color:var(--ink)}footer a:hover{text-decoration:underline}
       });
     });
   }
+
 })();
 </script>
 </body>
